@@ -26,9 +26,9 @@ preface your vendor name (the first part) with an `@` to make this a
 Now run `npm install && npm run build` to install the required dev dependencies and compile the example code.
 
 ### Remove example code
-You can work on your package inside the `src` directory, currently `src/index.js` contains an example `helloWorld()` 
-function, which you can delete and add your own code. You can watch for changes with the `npm run watch` command and
-compile for production with the `npm run build` command.
+You can work on your package inside the `src` directory, currently `src/index.js` just exports the `HelloWorld` class 
+from `src/HelloWorld.js`, which you can delete and add your own code. You can watch for changes with the `npm run watch` 
+command and compile for production with the `npm run build` command.
 
 ### Testing package before publishing
 To test your package inside a project before publishing to NPM, you can use `npm link` to create a symbolic link to your 
@@ -44,10 +44,14 @@ Inside the project you want to test your package in, run:
 npm link vendor/package-name
 ```
 
-Now you can test your package - see the example below, this is how we would use the `helloWorld` function inside our
+Now you can test your package - see the example below, this is how we would use the `HelloWorld` class inside our
 real world project:
 ```
-import { helloWorld } from "@my-org/node-package-template";
+import { HelloWorld } from "@my-org/node-package-template";
 
-console.log(helloWorld());
+console.log(HelloWorld.greetWorld());
 ```
+
+### Added TDD
+It's good practice to use Test Driven Development, so I've included jest. Write your tests inside the tests directory - 
+an example using the `HelloWorld` class has been included. Run the command `npm test` to run your tests.
