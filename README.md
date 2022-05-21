@@ -44,4 +44,12 @@ Inside the project you want to test your package in, run:
 npm link vendor/package-name
 ```
 
-Now you can test your package :)
+Now you can test your package - see the example below, this is how we would use the `helloWorld` function inside our
+real world project:
+```
+import { helloWorld } from "@my-org/node-package-template";
+
+console.log(helloWorld());
+```
+
+Then you 
