@@ -51,5 +51,3 @@ import { helloWorld } from "@my-org/node-package-template";
 
 console.log(helloWorld());
 ```
-
-Then you 
