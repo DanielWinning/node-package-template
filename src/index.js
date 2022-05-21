@@ -1,7 +1,5 @@
-const helloWorld = () => {
-    return "Hello, world!";
-}
+import HelloWorld from "./HelloWorld";
 
 module.exports = {
-    helloWorld
+    HelloWorld
 }
