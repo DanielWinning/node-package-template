@@ -55,3 +55,7 @@ console.log(HelloWorld.greetWorld());
 ### Added TDD
 It's good practice to use Test Driven Development, so I've included jest. Write your tests inside the tests directory - 
 an example using the `HelloWorld` class has been included. Run the command `npm test` to run your tests.
+
+### Publishing your package
+When you're happy that your package is ready to be released into the wild, simply run `npm publish` or 
+`npm publish --access public` if your package is scoped.
