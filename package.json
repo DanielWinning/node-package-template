@@ -1,7 +1,7 @@
 {
-  "name": "@dannyxcii/selector.js",
+  "name": "@my-org/node-package-template",
   "version": "1.0.0",
-  "description": "A vanilla JS select.",
+  "description": "A package skeleton.",
   "main": "dist/index.js",
   "scripts": {
     "build": "npx babel src --out-dir dist",
